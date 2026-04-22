@@ -1,0 +1,15 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "my-website",
+	"main": "server.ts",
+	"compatibility_date": "2026-05-13",
+	"compatibility_flags": [
+    "nodejs_compat"
+  ],
+	"assets": {
+    "directory": "./generated"
+  },
+	"rules": [
+    { "type": "Text", "globs": [".routenames.json"], "fallthrough": false }
+  ]
+}

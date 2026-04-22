@@ -1,0 +1,6 @@
+.DS_Store
+.routenames.json
+.wrangler/
+dist/
+generated/
+node_modules/

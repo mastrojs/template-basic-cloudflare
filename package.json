@@ -1,0 +1,26 @@
+{
+  "name": "my-first-worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "deno serve --watch=. --allow-read --allow-env jsr:@mastrojs/mastro/server",
+    "dev": "pnpm run generate && wrangler dev",
+    "build": "pnpm run generate && wrangler build",
+    "generate": "node node_modules/@mastrojs/mastro/src/generator.js --only-pregenerate --write-routenames",
+    "deploy": "wrangler deploy",
+    "check": "tsc",
+    "cf-typegen": "wrangler types"
+  },
+  "engines": {
+    "node": ">=24.12"
+  },
+  "dependencies": {
+    "@mastrojs/mastro": "npm:@jsr/mastrojs__mastro@^0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.91.0"
+  }
+}

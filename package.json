@@ -19,8 +19,8 @@
     "@mastrojs/mastro": "npm:@jsr/mastrojs__mastro@^0"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "typescript": "^7.0.2",
-    "wrangler": "^4.123.0"
+    "@types/node": "^24",
+    "typescript": "^7",
+    "wrangler": "^4"
   }
 }
